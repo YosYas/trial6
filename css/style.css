@@ -1,1 +1,59 @@
 @charset "utf-8";
+/* common */
+
+/* header */
+.header {
+  background-color: rgba(248, 240, 218, 0.7);
+}
+
+/* main */
+.main {
+  background-color: #f8e3a6;
+}
+
+/* brands */
+
+/* events */
+
+/* exhibitions */
+
+/* sns */
+
+/* faq */
+.faq {
+  background-color: #fff;
+}
+
+/* access */
+
+/* entry */
+.entry {
+  background-color: #fff;
+}
+
+/* footer */
+.footer {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+/* header */
+
+/* main */
+
+/* brands */
+
+/* events */
+
+/* exhibitions */
+
+/* sns */
+
+/* faq */
+
+/* access */
+
+/* entry */
+
+/* footer */
+}
