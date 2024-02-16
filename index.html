@@ -14,25 +14,28 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <!-- my css -->
   <link rel="stylesheet" href="./css/style.css">
-  <!-- my javaScript -->
-  <script src="./js/main.js" defer></script>
+
 </head>
 <body>
   <header class="header">
     <section class="hero">
-      <div>
-        <img src="" alt="KiramekiFoodsロゴ">
-        <h1>キラメキFES<br><span>in お台場</span></h1>
+      <div class="hero-title">
+        <div class="hero-text">
+          <img src="./images/kirameki_foods_logo@2x.png" alt="KiramekiFoodsロゴ" class="logo">
+          <h1>キラメキFES<br><span>in お台場</span></h1>
+        </div>
+        <div class="opendate">
+          <p><time datetime="2022-09-01/2022-09-07">2022.09.01-07</time></p>
+          <span>開催決定</span>
+        </div>
+        <p>at キラメキパーク&ショップ</p>
+        <p>#キラメキFES</p>
       </div>
-      <div>
-        <p><time datetime="2022-09-01/2022-09-07">2022.09.01-07</time></p>
-        <span>開催決定</span>
-      </div>
-      <p>at キラメキパーク&ショップ</p>
-      <p>#キラメキFES</p>
     </section>
-    <h2>徹底的に素材にこだわった<br>Kirameki Foods<span>すべての商品</span>を体験</h2>
-    <p>ブランドAやブランドB、ブランドCなどKirameki Foodsが展開する すべてのブランドの商品を無料で試せます </p>
+    <div class="header-text">
+      <h2>徹底的に素材にこだわった<br>Kirameki Foods<span>すべての商品</span>を体験</h2>
+      <p>ブランドAやブランドB、ブランドCなどKirameki Foodsが展開する<br>すべてのブランドの商品を無料で試せます</p>
+    </div>
   </header>
   <main class="main">
     <section class="brands">
@@ -43,28 +46,28 @@
             <h4>ブランドA</h4>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           </div>
-          <img src="" alt="">
+          <img src="./images/brand_01@2x-min.jpg" alt="">
         </div>
         <div class="brand">
           <div>
             <h4>ブランドB</h4>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           </div>
-          <img src="" alt="">
+          <img src="./images/brand_02@2x-min.jpg" alt="">
         </div>
         <div class="brand">
           <div>
             <h4>ブランドC</h4>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           </div>
-          <img src="" alt="">
+          <img src="./images/brand_03@2x-min.jpg" alt="">
         </div>
         <div class="brand">
           <div>
             <h4>ブランドD</h4>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           </div>
-          <img src="" alt="">
+          <img src="./images/brand_04@2x-min.jpg" alt="">
         </div>
       </div>
     </section>
@@ -75,46 +78,52 @@
           <h4>ライブペインティング</h4>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
-        <img src="" alt="">
+        <img src="./images/event_01@2x-min.jpg" alt="ライブペインティング実演">
       </div>
       <div class="event">
         <div>
           <h4>アコースティックLIVE</h4>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
-        <img src="" alt="">
+        <img src="./images/event_02@2x-min.jpg" alt="アコースティックライブ">
       </div>
     </section>
     <div class="slide"></div>
     <section class="exhibitions">
       <h3>EXHIBITION BOOTH</h3>
-      <div class="exhibition">
-        <div>
-          <span>予約不要</span>
-          <h4>オリーブ収穫体験</h4>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <div class="exhibition-container">
+        <div class="exhibition">
+          <div class="exhibition-text">
+            <span>予約不要</span>
+            <h4>オリーブ収穫体験</h4>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <img src="./images/exhibition_01@2x-min.jpg" alt="オリーブを収穫する人">
         </div>
-        <img src="" alt="">
-      </div>
-      <div class="exhibition">
-        <div>
-          <span>予約不要</span>
-          <h4>はちみつパック</h4>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <div class="exhibition">
+          <div class="exhibition-text">
+            <span>予約不要</span>
+            <h4>はちみつパック</h4>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <img src="./images/exhibition_02@2x-min.jpg" alt="ハチミツ">
         </div>
-        <img src="" alt="">
-      </div>
-      <div>
-        <span>予約不要</span>
-        <h4>ブルーベリー食べ放題</h4>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        <img src="" alt="">
-      </div>
-      <div>
-        <span>要予約</span>
-        <h4>茶摘み＆手揉み</h4>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        <img src="" alt="">
+        <div class="exhibition">
+          <div class="exhibition-text">
+            <span>予約不要</span>
+            <h4>ブルーベリー食べ放題</h4>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <img src="./images/exhibition_03@2x-min.jpg" alt="ブルーベリー">
+        </div>
+        <div class="exhibition">
+          <div class="exhibition-text">
+            <span>要予約</span>
+            <h4>茶摘み＆手揉み</h4>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <img src="./images/exhibition_04@2x-min.jpg" alt="茶摘みしている人">
+        </div>
       </div>
     </section>
     <section class="sns">
@@ -151,7 +160,7 @@
           </dl>
         </div>
         <div class="access-map">
-          <div id="map" style="height: 557px; width: 100%;"></div>
+          <div id="map"></div>
         </div>
       </div>
     </section>
@@ -326,5 +335,15 @@
       </nav>
       <p><small>&copy; <time>2004</time>-<time>2021</time> Kirameki Foods Company, Limited All Rights Reserved.</small></p>
   </footer>
+<script>
+  (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="initMap",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+    key: "",
+    v: "weekly",
+    // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+    // Add other bootstrap parameters as needed, using camel case.
+  });
+</script>
+<!-- my javaScript -->
+<script src="./js/main.js"></script>
 </body>
 </html>
