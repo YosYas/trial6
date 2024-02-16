@@ -1,16 +1,15 @@
 'use strict';
 {
-function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+  // GoogleMap
+  let map;
+  async function initMap() {
+    const kirameki = { lat: 35.64373, lng: 139.79450 };
+    const { Map } = await google.maps.importLibrary("maps");
+    map = new Map(document.getElementById("map"), {
+    center: kirameki,
+    zoom: 14,
   });
 }
-
-// インラインブートストラップローダーのコールバック関数としてinitMapを登録
-// google.maps.__ib__ = initMap;
-window.initMap = initMap;
-
-
+  initMap();
 
 }

@@ -38,7 +38,7 @@
     </div>
   </header>
   <main class="main">
-    <section class="brands">
+    <section class="brands container">
       <h3>BRAND</h3>
       <div class="brand-container">
         <div class="brand">
@@ -71,17 +71,17 @@
         </div>
       </div>
     </section>
-    <section class="events">
+    <section class="events container">
       <h3>event</h3>
       <div class="event">
-        <div>
+        <div class="event-text">
           <h4>ライブペインティング</h4>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
         <img src="./images/event_01@2x-min.jpg" alt="ライブペインティング実演">
       </div>
       <div class="event">
-        <div>
+        <div class="event-text">
           <h4>アコースティックLIVE</h4>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
@@ -89,7 +89,7 @@
       </div>
     </section>
     <div class="slide"></div>
-    <section class="exhibitions">
+    <section class="exhibitions container">
       <h3>EXHIBITION BOOTH</h3>
       <div class="exhibition-container">
         <div class="exhibition">
@@ -133,20 +133,22 @@
       </div>
     </section>
     <section class="faq">
-      <h3>FAQ</h3>
-      <dl>
-        <dt>来場に予約は必要ですか？
-          <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-        </dt>
-        <dt>会場に駐車場はありますか？
-          <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-        </dt>
-        <dt>飲食物の持ち込みはできますか？
-          <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-        </dt>
-      </dl>
+      <div class="container">
+        <h3>FAQ</h3>
+        <dl>
+          <dt>来場に予約は必要ですか？
+            <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+          </dt>
+          <dt>会場に駐車場はありますか？
+            <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+          </dt>
+          <dt>飲食物の持ち込みはできますか？
+            <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+          </dt>
+        </dl>
+      </div>
     </section>
-    <section class="access">
+    <section class="access container">
       <h3>ACCESS</h3>
       <div class="access-container">
         <div class="access-text">
@@ -336,11 +338,10 @@
       <p><small>&copy; <time>2004</time>-<time>2021</time> Kirameki Foods Company, Limited All Rights Reserved.</small></p>
   </footer>
 <script>
-  (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="initMap",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+  (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
     key: "",
-    v: "weekly",
-    // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
     // Add other bootstrap parameters as needed, using camel case.
+    // Use the 'v' parameter to indicate the version to load (alpha, beta, weekly, etc.)
   });
 </script>
 <!-- my javaScript -->
