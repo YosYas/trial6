@@ -45,4 +45,34 @@
       }
     });
   });
+
+// フェードイン効果(下から上)
+  const fadeinUp = {
+    opacity: [0, 1],
+    transform: ["translate(0, 100px)", "translate(0, 0px)"],
+  };
+
+  // 範囲内に対象が現れたら実行
+  const show = (entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target.className === "fadeinUp") {
+          entry.target.animate(fadeinUp, {
+            duration: 1000,
+            easing: "ease",
+            fill: "forwards",
+          });
+        }
+        obs.unobserve(entry.target);
+      }
+    });
+  };
+
+  // 監視設定
+  const showObserver = new IntersectionObserver(show);
+  // .fadeinUpを監視
+  const showElements = document.querySelectorAll(".fadeinUp");
+  showElements.forEach((showElement) => {
+    showObserver.observe(showElement);
+  });  
 }
