@@ -157,6 +157,81 @@ html {
 /* entry */
 .entry {
   background-color: #fff;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.entry-container {
+  padding: 3rem 1.5rem;
+  border: 1px solid #524e4d;
+  border-radius: 10px;
+}
+
+.information {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background-color: #ddd;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.form-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.entry label {
+  font-size: 1.5rem;
+}
+
+.entry input {
+  width: 100%;
+  border: 1px solid #524e4d;
+  border-radius: 5px;
+  height: 2.66rem;
+  font-size: 1.33rem;
+  margin-bottom: 0.1rem;
+}
+
+.address select {
+  width: 100%;
+  border: 1px solid #524e4d;
+  border-radius: 5px;
+  height: 2.66rem;
+  font-size: 1.33rem;
+  margin-bottom: 1.5rem;
+}
+
+.required {
+  display: inline-block;
+  width: 68px;
+  height: 30px;
+  background-color: #7f0019;
+  color: #fff;
+  font-size: 1.33rem;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+}
+
+.optional {
+  display: inline-block;
+  width: 68px;
+  height: 30px;
+  background-color: #1f2774;
+  color: #fff;
+  font-size: 1.33rem;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+}
+
+.error-message {
+  display: block;
+  font-size: 12px;
+  color: red;
+  margin-bottom: 8px;
 }
 
 /* footer */
@@ -277,6 +352,54 @@ html {
     
   }
   /* entry */
+
+  .entry-container {
+    /* width: calc(100% - (64px * 2)); */
+    margin: 0 auto;
+  }
+
+  .form {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .form-label {
+    outline: 1px solid red;
+    width: 264px;
+    align-items: center;
+  }
+
+  .character input,
+  .pronunciation input,
+  .password input,
+  #tel {
+    width: 362px;
+  }
+
+  .contact input,
+  #city,
+  #apartment {
+    width: 460px;
+  }
+
+  .address input,
+  .address select {
+    width: 167px;
+    margin-bottom: 3px;
+  }
+
+  .name {
+    margin-bottom: 60px;
+  }
+
+  .address {
+    margin-bottom: 60px;
+  }
+
+  .contact {
+    margin-bottom: 60px;
+  }
 
   /* footer */
 }
