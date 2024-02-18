@@ -54,13 +54,13 @@
   // フェードイン効果(右から左)
   const fadeinRight = {
     opacity: [0, 1],
-    transform: ["translate(-100px, 0px)", "translate(0px, 0px)"],
+    transform: ["translate(-200px, 0px)", "translate(0px, 0px)"],
   };
   
   // フェードイン効果(左から右)
   const fadeinLeft = {
     opacity: [0, 1],
-    transform: ["translate(100px, 0)", "translate(0px, 0px)"],
+    transform: ["translate(200px, 0)", "translate(0px, 0px)"],
   };
 
   // 範囲内に対象が現れたら実行
@@ -76,14 +76,14 @@
         }
         else if (entry.target.classList.contains("fadeinRight")) {
           entry.target.animate(fadeinRight, {
-            duration: 500,
+            duration: 700,
             easing: "ease",
             fill: "forwards",
           });
         }
         else if (entry.target.classList.contains("fadeinLeft")) {
           entry.target.animate(fadeinLeft, {
-            duration: 500,
+            duration: 700,
             easing: "ease",
             fill: "forwards",
           });

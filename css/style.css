@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 /* header */
 .header {
   background-color: #f8e3a6;
@@ -122,38 +126,71 @@ html {
 }
 
 /* exhibitions */
+.exhibitions {
+  position: relative;
+}
+
 .exhibition {
   display: flex;
   flex-direction: column-reverse;
   position: relative;
+  background-color: #fff;
 }
 
 .exhibition img {
   width: 100%;
   height: auto;
 }
-/* あしらいを作成中 */
-/* .exhibition-text::before {
-  content: "予約不要";
-  position: absolute;
-  top: 10px;
-  right: 0;
-  width: 100px;
-  height: 100px;
-  background-color: #1f2774;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  transform: translate(50%, -50%) rotate(45deg);
-  transform-origin: 100% 0;
-  z-index: -1;
-  line-height: 140px;
-} */
 
 .exhibition-text {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.exhibition::before {
+    content: "";
+    top: 0;
+    border-bottom: 6em solid transparent;
+    position: absolute;
+    z-index: 100;
+}
+
+.exhibition::after {
+  content: "予約不要";
+  display: block;
+  top: 24px;
+  color: #fff; 
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  z-index: 101;
+}
+
+.exhibition:nth-of-type(even)::before {
+  left: 0;
+  border-left: 6em solid #1f2774;
+}
+
+.exhibition:nth-of-type(even)::after {
+  transform: rotate(-45deg);
+  left: 5px;
+}
+
+.exhibition:nth-of-type(odd)::before {
+  right: 0;
+  border-right: 6em solid #1f2774;
+  border-left: none;
+}
+
+.exhibition:nth-of-type(odd)::after {
+  transform: rotate(45deg);
+  right: 5px;
+  left: auto;
+}
+
 /* sns */
 
 /* faq */
@@ -342,7 +379,7 @@ html {
   .exhibition-text {
     width: 50%;
   }
-  .exhibition img {
+  .exhibition-image {
     /* width: 475px; */
     width: 50%;
     height: auto;
