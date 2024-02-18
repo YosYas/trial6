@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
-  <!-- reset css -->
-  <link rel="stylesheet" href="./css/reset.css">
+  <!-- normalize.css -->
+  <link rel="stylesheet" href="./css/normalize.css">
   <!-- font awesome5 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <!-- my css -->
@@ -19,17 +19,18 @@
 <body>
   <header class="header">
     <section class="hero animation fadein">
-      <div class="hero-title">
+      <div class="hero-title container">
         <div class="hero-text">
           <img src="./images/kirameki_foods_logo@2x.png" alt="KiramekiFoodsロゴ" class="logo">
-          <h1>キラメキFES<br><span>in お台場</span></h1>
+          <h1>キラメキFES</h1>
+          <span>in お台場</span>
         </div>
         <div class="opendate">
           <p><time datetime="2022-09-01/2022-09-07">2022.09.01-07</time></p>
           <span>開催決定</span>
         </div>
-        <p>at キラメキパーク&ショップ</p>
-        <p>#キラメキFES</p>
+        <p class="place">at キラメキパーク&ショップ</p>
+        <p class="tag">#キラメキFES</p>
       </div>
     </section>
     <div class="header-text">
@@ -72,7 +73,7 @@
       </div>
     </section>
     <section class="events container">
-      <h3>event</h3>
+      <h3>EVENT</h3>
       <div class="event">
         <div class="event-text">
           <h4>ライブペインティング</h4>
@@ -88,8 +89,8 @@
         <img src="./images/event_02@2x-min.jpg" alt="アコースティックライブ" class="animation fadeinLeft">
       </div>
     </section>
-    <div class="slide">
-      <img src="./images/slide@2x.webp" alt="" height="288">
+    <div class="slide-container">
+      <div class="slide"></div>
     </div>
     <section class="exhibitions container">
       <h3>EXHIBITION BOOTH</h3>
