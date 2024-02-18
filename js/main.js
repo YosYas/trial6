@@ -46,19 +46,44 @@
     });
   });
 
-// フェードイン効果(下から上)
-  const fadeinUp = {
+// フェードイン
+  const fadein = {
+    opacity: [0, 1]
+  };
+  
+  // フェードイン効果(右から左)
+  const fadeinRight = {
     opacity: [0, 1],
-    transform: ["translate(0, 100px)", "translate(0, 0px)"],
+    transform: ["translate(-100px, 0px)", "translate(0px, 0px)"],
+  };
+  
+  // フェードイン効果(左から右)
+  const fadeinLeft = {
+    opacity: [0, 1],
+    transform: ["translate(100px, 0)", "translate(0px, 0px)"],
   };
 
   // 範囲内に対象が現れたら実行
   const show = (entries, obs) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        if (entry.target.className === "fadeinUp") {
-          entry.target.animate(fadeinUp, {
-            duration: 1000,
+        if (entry.target.classList.contains("fadein")) {
+          entry.target.animate(fadein, {
+            duration: 2000,
+            easing: "ease",
+            fill: "forwards",
+          });
+        }
+        else if (entry.target.classList.contains("fadeinRight")) {
+          entry.target.animate(fadeinRight, {
+            duration: 500,
+            easing: "ease",
+            fill: "forwards",
+          });
+        }
+        else if (entry.target.classList.contains("fadeinLeft")) {
+          entry.target.animate(fadeinLeft, {
+            duration: 500,
             easing: "ease",
             fill: "forwards",
           });
@@ -70,8 +95,8 @@
 
   // 監視設定
   const showObserver = new IntersectionObserver(show);
-  // .fadeinUpを監視
-  const showElements = document.querySelectorAll(".fadeinUp");
+  // .animationを監視
+  const showElements = document.querySelectorAll(".animation");
   showElements.forEach((showElement) => {
     showObserver.observe(showElement);
   });  
