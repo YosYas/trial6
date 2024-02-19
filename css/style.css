@@ -15,17 +15,60 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+button {
   margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
 }
 
 img {
   vertical-align: bottom;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #524e4d;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  color: #fff;
+  background-color: #7f0019;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
 /* sp表示 */
 html {
   font-size: 12px;
+}
+
+body {
+  padding-bottom: 30px;
 }
 
 .container {
@@ -48,7 +91,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .hero-title {
@@ -58,6 +100,7 @@ html {
   justify-content: center;
   padding: 30px 0;
   text-align: center;
+  width: 345px;
 }
 
 .hero-text h1 {
@@ -156,7 +199,7 @@ html {
 }
 
 .brands h3::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -233,6 +276,29 @@ html {
   margin: 0 auto 40px;
 }
 
+.events h3::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 5px;
+  background-color: #1f2774;
+}
+
+.event h4 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.event p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
 .event img {
   width: 100%;
   height: auto;
@@ -258,6 +324,26 @@ html {
 /* exhibitions */
 .exhibitions {
   position: relative;
+  padding-top: 60px;
+}
+
+.exhibitions h3 {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 0 auto 40px;
+}
+
+.exhibitions h3::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 10px;
+  width: 25%;
+  height: 5px;
+  background-color: #1f2774;
 }
 
 .exhibition {
@@ -265,6 +351,32 @@ html {
   flex-direction: column-reverse;
   position: relative;
   background-color: #fff;
+  margin-bottom: 25px;
+}
+
+.exhibition h4 {
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  margin: 40px auto;
+}
+
+.exhibition h4::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 5px;
+  background-color: #1f2774;
+}
+
+.exhibition p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 50px;
 }
 
 .exhibition img {
@@ -281,19 +393,19 @@ html {
 }
 
 .exhibition::before {
-    content: "";
-    top: 0;
-    border-bottom: 6em solid transparent;
-    position: absolute;
-    z-index: 100;
+  content: "";
+  top: 0;
+  border-bottom: 6em solid transparent;
+  position: absolute;
+  z-index: 100;
 }
 
 .exhibition::after {
   content: "予約不要";
   display: block;
-  top: 24px;
-  color: #fff; 
-  font-size: 16px;
+  top: 20px;
+  color: #fff;
+  font-size: 14px;
   font-weight: 700;
   position: absolute;
   z-index: 101;
@@ -322,10 +434,57 @@ html {
 }
 
 /* sns */
+.sns {
+  background-image: url(../images/hash_bg@2x-min.webp);
+  background-size: cover;
+  background-position: center;
+  height: 396px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.sns div {
+  background-color: rgba(248, 240, 218, 0.7);
+  width: 355px;
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sns h3 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.sns p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.7;
+}
 /* faq */
 .faq {
   background-color: #fff;
+  padding: 60px 0 36px;
+}
+
+.faq h3 {
+  font-size: 48px;
+  font-weight: 700;
+  position: relative;
+  margin: 0 auto 40px;
+}
+
+.faq h3::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 25%;
+  height: 5px;
+  background-color: #7f0019;
 }
 
 .faq dt::before {
@@ -333,26 +492,108 @@ html {
   color: #7f0019;
   display: inline-block;
   font-size: 1em;
-  margin-right: 0.5em; 
+  margin-right: 0.5em;
 }
 
+.faq dt {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.faq dd {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 36px;
+}
 /* access */
+.access {
+  padding: 60px 0;
+}
+
 .access-container {
   display: flex;
   flex-direction: column;
 }
 
+.access h3 {
+  font-size: 48px;
+  font-weight: 700;
+  position: relative;
+  margin: 0 auto 40px;
+}
+
+.access h3::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 25%;
+  height: 5px;
+  background-color: #1f2774;
+}
+
+.access dl dt {
+  margin-left: 4%;
+  position: relative;
+}
+
+.access dl dt::before {
+  content: "";
+  position: absolute;
+  left: -4%;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  margin-left: -50vw;
+  transform: translateX(50%);
+  border-top: 1px solid black;
+}
+
+.access dt {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.access dd {
+  font-size: 16px;
+  padding-bottom: 18px;
+  margin-left: 4%;
+}
+
 #map {
-  width: 379px;
+  width: 100%;
   height: 333px;
 }
- 
+
 /* entry */
 .entry {
   background-color: #fff;
   margin: 0 auto;
   padding: 5rem 0;
+} 
+
+.entry h3 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  margin: 0 auto 40px;
 }
+
+.entry h3::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+  height: 5px;
+  background-color: #7f0019;
+}
+
 .entry-container {
   padding: 3rem 1.5rem;
   border: 1px solid #524e4d;
@@ -360,11 +601,13 @@ html {
 }
 
 .information {
-  font-size: 2.5rem;
+  font-size: 30px;
   font-weight: 700;
+  padding: 15px 0 20px;
   background-color: #ddd;
   border-radius: 10px;
   text-align: center;
+  letter-spacing: 0.15em;
   margin-bottom: 5rem;
 }
 
@@ -427,9 +670,34 @@ html {
   margin-bottom: 8px;
 }
 
+.send-btn {
+  background-color: #7f0019;
+  color: #fff;
+  width: 100%;
+  padding: 28px 0;
+  font-size: 24px;
+  font-weight: 900;
+  border-radius: 15px;
+}
+
+.send-btn:hover {
+  opacity: 0.8;
+}
+
 /* footer */
 .footer {
   background-color: #fff;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.footer-nav ul {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.footer-nav li {
+  margin-bottom: 21px;
 }
 
 @media screen and (min-width: 768px) {
@@ -547,7 +815,8 @@ html {
     flex-direction: row;
   }
 
-  .access-text dt, .access-text dd {
+  .access-text dt,
+  .access-text dd {
     margin-left: 0;
   }
 
@@ -560,7 +829,6 @@ html {
     /* height: 557px;
     width: 657px; */
     width: 100%;
-    
   }
   /* entry */
 
@@ -617,6 +885,10 @@ html {
 
 /* animation */
 @keyframes bgScroll {
-  0% {background-position: 0;}
-  100% {background-position: -2520px 0;} 
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -2520px 0;
+  }
 }

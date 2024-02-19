@@ -76,14 +76,14 @@
         }
         else if (entry.target.classList.contains("fadeinRight")) {
           entry.target.animate(fadeinRight, {
-            duration: 700,
+            duration: 1000,
             easing: "ease",
             fill: "forwards",
           });
         }
         else if (entry.target.classList.contains("fadeinLeft")) {
           entry.target.animate(fadeinLeft, {
-            duration: 700,
+            duration: 1000,
             easing: "ease",
             fill: "forwards",
           });
