@@ -673,6 +673,7 @@ body {
 .send-btn {
   background-color: #7f0019;
   color: #fff;
+  max-width: 360px;
   width: 100%;
   padding: 28px 0;
   font-size: 24px;
@@ -700,6 +701,7 @@ body {
   margin-bottom: 21px;
 }
 
+/* pc画面 */
 @media screen and (min-width: 768px) {
   /* header */
   .header {
@@ -716,7 +718,50 @@ body {
     width: 460px;
   }
 
+  .hero-text {
+    margin-bottom: 24px;
+  }
+
+  .hero-text h1 {
+    margin: 10px auto 5px;
+  }
+
+  .opendate {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .opendate span {
+    margin: 0 0 0 8px;
+  }
+
+  .place, .tag {
+    text-align: start;
+    margin-left: 48px;
+  }
+
+  .header-text {
+    padding: 80px 0 20px;
+  }
+
+  .header-text h2 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+
+  .header-text span {
+    font-size: 56px;
+    font-weight: 700;
+  }
+
+  .header-text p {
+    font-size: 24px;
+  }
   /* main */
+
   .container {
     width: 84%;
     margin: 0 auto;
@@ -727,9 +772,18 @@ body {
     padding: 48px 90px;
   }
 
+  .brand-container {
+    gap: 30px;
+  }
+
   .brands h3 {
+    text-align: center;
     font-size: 64px;
     margin-bottom: 90px;
+  }
+
+  .brands h3::after {
+    width: 25%;
   }
 
   .brand img {
@@ -741,13 +795,27 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
+  .brand:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
   /* events */
+  .events h3 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 90px;
+  }
+
+  .events h3::after {
+    width: 25%;
+  }
 
   .event {
     flex-direction: row;
     gap: 30px;
     justify-content: center;
     order: 1;
+    margin-bottom: 30px;
   }
 
   .event:nth-of-type(odd) {
@@ -770,6 +838,19 @@ body {
   }
 
   /* exhibitions */
+  .exhibitions {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .exhibitions h3 {
+    text-align: start;
+  }
+
+  .exhibitions h3::after {
+    width: 75px;
+  }
+
   .exhibition {
     width: 83%;
     flex-direction: row;
@@ -786,7 +867,6 @@ body {
   }
 
   .exhibition-image {
-    /* width: 475px; */
     width: 50%;
     height: auto;
   }
@@ -806,6 +886,13 @@ body {
     width: 55%;
   }
   /* faq */
+  .faq h3 {
+    display: inline-block;
+  }
+  .faq h3::after {
+    width: 75px;
+  }
+
   .faq dl {
     margin-left: 11.1%;
   }
@@ -813,11 +900,25 @@ body {
   /* access */
   .access-container {
     flex-direction: row;
+    width: 84%;
+    margin: 0 auto;
+    gap: 30px;
   }
 
-  .access-text dt,
-  .access-text dd {
+  .access h3::after {
+    width: 75px;
+  }
+  
+  .access dl dt dd{
     margin-left: 0;
+  }
+
+  .access dt {
+    border-top: 1px solid #000;
+  }
+
+  .access dl dt::before {
+    width: 0;
   }
 
   .access-map {
@@ -833,7 +934,6 @@ body {
   /* entry */
 
   .entry-container {
-    /* width: calc(100% - (64px * 2)); */
     margin: 0 auto;
   }
 
@@ -880,7 +980,24 @@ body {
     margin-bottom: 60px;
   }
 
+  .send {
+    width: 100%;
+    text-align: center;
+  }
+
   /* footer */
+  .footer {
+    padding-top: 0;
+  }
+  .footer-nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 40px; */
+  }
+
+  .footer small {
+    font-size: 10px;
+  }
 }
 
 /* animation */
