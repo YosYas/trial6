@@ -315,7 +315,6 @@ body {
   height: 288px;
   background-image: url(../images/slide2@2x.webp);
   background-repeat: repeat-x;
-  /* background-size: 2520px 288px; */
   background-size: cover;
   animation: bgScroll 100s linear infinite;
   height: 428px; /* パディング(60+80)px+画像288px */
@@ -413,24 +412,32 @@ body {
 
 .exhibition:nth-of-type(even)::before {
   left: 0;
-  border-left: 6em solid #1f2774;
+  border-left: 7em solid #1f2774;
 }
 
 .exhibition:nth-of-type(even)::after {
   transform: rotate(-45deg);
-  left: 5px;
+  left: 3px;
 }
 
 .exhibition:nth-of-type(odd)::before {
   right: 0;
-  border-right: 6em solid #1f2774;
+  border-right: 7em solid #1f2774;
   border-left: none;
 }
 
 .exhibition:nth-of-type(odd)::after {
   transform: rotate(45deg);
-  right: 5px;
+  right: 3px;
   left: auto;
+}
+
+.exhibition:nth-child(4)::before {
+  border-left: 7em solid #7f0019;
+}
+
+.exhibition:nth-child(4)::after {
+  content: "要予約";
 }
 
 /* sns */
@@ -800,6 +807,12 @@ body {
 }
 
   /* events */
+  .events {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+  }
+
   .events h3 {
     text-align: center;
     font-size: 64px;
@@ -826,9 +839,13 @@ body {
     width: 40%;
   }
 
+  .event-text h4 {
+    text-align: start;
+    margin:48px 0  24px;
+  }
+
   .event img {
     width: 40%;
-    /* height: auto; */
     object-fit: cover;
   }
 
@@ -856,6 +873,10 @@ body {
     flex-direction: row;
     margin: 0 auto;
     margin-bottom: 60px;
+  }
+
+  .exhibition p {
+    width: 90%;
   }
 
   .exhibition:nth-of-type(odd) {
@@ -933,7 +954,16 @@ body {
   }
   /* entry */
 
+  .entry h3 {
+    font-size: 60px;
+  }
+
+  .entry h3::after {
+    width: 75px;
+  }
+
   .entry-container {
+    width: 83%;
     margin: 0 auto;
   }
 
@@ -944,7 +974,6 @@ body {
   }
 
   .form-label {
-    outline: 1px solid red;
     width: 264px;
     align-items: center;
   }
@@ -989,10 +1018,11 @@ body {
   .footer {
     padding-top: 0;
   }
+
   .footer-nav ul {
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 40px; */
+    font-size: 16px;
   }
 
   .footer small {
